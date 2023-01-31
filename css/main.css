@@ -856,6 +856,14 @@ textarea {
   letter-spacing: 0.03em;
   text-align: center;
 }
+.benefits__text {
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .benefits__text {
+    text-align: left;
+  }
+}
 .benefits__conteiner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1008,7 +1016,7 @@ textarea {
 
 @media screen and (min-width: 1200px) {
   .clients {
-    padding-bottom: 30px;
+    padding-top: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1491,9 +1499,12 @@ textarea {
           align-items: center;
   padding: 0 10px;
 }
-@media screen and (max-width: 767px) {
-  .mimino:not(:last-child) {
-    margin-bottom: 30px;
+.mimino__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 767px) {
+  .mimino__item:not(:last-child) {
+    margin-bottom: 0px;
   }
 }
 
@@ -1520,7 +1531,6 @@ textarea {
 }
 
 .task__span {
-  margin-bottom: 20px;
   font-size: 18px;
   font-weight: 500;
   line-height: 2;
