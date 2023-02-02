@@ -41,12 +41,12 @@
         justify-content: center;
         color: var(--networks);
         
-        // &:hover,
-        // &:focus {
-        //     border: 1px solid var(--blue);
-        //     color: var(--blue);
-        //     transition: color 250ms var(--cubic), border 250ms var(--cubic);
-        // }
+        &:hover,
+        &:focus {
+            border: 1px solid var(--blue);
+            color: var(--blue);
+            transition: color 250ms var(--cubic), border 250ms var(--cubic);
+        }
     }
 
     &__icon {
@@ -54,3 +54,34 @@
         fill: currentColor;
     }
 }
+
+  .tooltip {
+      position: relative;
+      display: inline-block;
+   
+  }
+
+  .tooltip .tooltiptext {
+      visibility: hidden;
+      width: 120px;
+        bottom: 110%;
+        left: 50%;
+        margin-left: -60px;
+        
+      background-color: rgb(255, 255, 255);
+      color: var(--networks);
+      text-align: center;
+      border-radius: 6px;
+      border: 1px solid var(--networks);
+      padding: 5px 0;
+
+      /* Position the tooltip */
+      position: absolute;
+      z-index: 1;
+  }
+
+  .tooltip:hover .tooltiptext {
+      visibility: visible;
+  }
+
+

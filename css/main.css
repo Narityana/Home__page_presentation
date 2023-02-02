@@ -500,49 +500,51 @@ textarea {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   max-width: 1600px;
   max-height: 720px;
   margin: 0 auto;
-  padding: 30px 30px;
+  padding: 30px 30px 40px;
   color: var(--white);
   text-align: center;
-  background-color: rgba(251, 249, 195, 0.3);
+  background-color: #F7F7E6;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
+@media screen and (min-width: 768px) {
+  .hero {
+    padding: 60px 30px 90px;
+  }
+}
 .hero__title {
-  max-width: 360px;
-  text-transform: uppercase;
-  font-weight: 900;
-  font-size: 26px;
+  color: var(--grey-darck);
+  font-weight: 700;
+  font-size: 12px;
   line-height: 1.6;
-  letter-spacing: 0.06em;
-  margin: 0 auto 30px;
+  letter-spacing: 0.1em;
+  margin: 10px auto 0px;
   text-align: center;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .hero__title {
-    font-size: 44px;
+    font-size: 30px;
     line-height: 1.36;
-    max-width: 696px;
+    margin-top: 20px;
+    padding-left: 20px;
   }
 }
 .hero__button {
   margin-top: 40px;
-  min-width: 200px;
-  height: 50px;
+  min-width: 100px;
+  height: 40px;
   border-radius: 4px;
   background-color: #F68712;
   color: var(--white);
   font-weight: 700;
-  font-size: 20px;
+  font-size: 14px;
   text-align: center;
   letter-spacing: 0.06em;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -550,6 +552,25 @@ textarea {
   max-width: 400px;
   padding: 10px 24px;
   line-height: 1.2;
+}
+@media screen and (min-width: 768px) {
+  .hero__button {
+    margin-top: 40px;
+    min-width: 200px;
+    height: 50px;
+    border-radius: 4px;
+    background-color: #F68712;
+    color: var(--white);
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    max-width: 400px;
+    padding: 10px 24px;
+    line-height: 1.2;
+  }
 }
 
 .backdrop {
@@ -859,11 +880,6 @@ textarea {
 .benefits__text {
   text-align: center;
 }
-@media screen and (min-width: 768px) {
-  .benefits__text {
-    text-align: left;
-  }
-}
 .benefits__conteiner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1074,11 +1090,43 @@ textarea {
           justify-content: center;
   color: var(--networks);
 }
+.clients__link:hover, .clients__link:focus {
+  border: 1px solid var(--blue);
+  color: var(--blue);
+  -webkit-transition: color 250ms var(--cubic), border 250ms var(--cubic);
+  transition: color 250ms var(--cubic), border 250ms var(--cubic);
+}
 .clients__icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   fill: currentColor;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  bottom: 110%;
+  left: 50%;
+  margin-left: -60px;
+  background-color: rgb(255, 255, 255);
+  color: var(--networks);
+  text-align: center;
+  border-radius: 6px;
+  border: 1px solid var(--networks);
+  padding: 5px 0;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
 }
 
 .footer {
