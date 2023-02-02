@@ -1074,12 +1074,6 @@ textarea {
           justify-content: center;
   color: var(--networks);
 }
-.clients__link:hover, .clients__link:focus {
-  border: 1px solid var(--blue);
-  color: var(--blue);
-  -webkit-transition: color 250ms var(--cubic), border 250ms var(--cubic);
-  transition: color 250ms var(--cubic), border 250ms var(--cubic);
-}
 .clients__icon {
   display: -webkit-box;
   display: -ms-flexbox;
