@@ -637,7 +637,7 @@ textarea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 auto;
+  margin: 30px auto;
   padding: 10px 10px;
   line-height: 1.875;
 }
@@ -754,83 +754,6 @@ textarea {
   border: 1px solid var(--blue);
   -webkit-transition: border 250ms var(--cubic);
   transition: border 250ms var(--cubic);
-}
-
-.contract {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 30px;
-  cursor: pointer;
-}
-@media screen and (max-width: 420px) {
-  .contract {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
-.contract__input {
-  position: relative;
-  font-size: 14px;
-  line-height: 1.16;
-  letter-spacing: 0.03em;
-  color: var(--grey-light);
-}
-@media screen and (max-width: 1199px) {
-  .contract__input {
-    font-size: 12px;
-  }
-}
-.contract__checkbox {
-  margin-right: 8px;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  position: absolute;
-}
-.contract__checkbox:checked + .contract__icon {
-  background-color: var(--blue);
-  border: transparent;
-  -webkit-transition: background-color 250ms var(--cubic), border 250ms var(--cubic);
-  transition: background-color 250ms var(--cubic), border 250ms var(--cubic);
-}
-.contract__icon {
-  position: absolute;
-  left: -20px;
-  border: 2px solid var(--secondblack);
-  border-radius: 4px;
-  background-color: var(--white);
-  fill: var(--white);
-}
-.contract__link {
-  font-size: 12px;
-  line-height: 1.16;
-  color: var(--blue);
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
-  -webkit-text-decoration-skip-ink: none;
-          text-decoration-skip-ink: none;
-  margin-left: 5px;
-}
-@media screen and (min-width: 480px) {
-  .contract__link {
-    margin-right: 25px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .contract__link {
-    font-size: 14px;
-    line-height: 1.71;
-    margin-right: 25px;
-  }
 }
 
 @media screen and (min-width: 1200px) {
