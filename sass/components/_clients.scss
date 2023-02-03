@@ -46,6 +46,7 @@
             border: 1px solid var(--blue);
             color: var(--blue);
             transition: color 250ms var(--cubic), border 250ms var(--cubic);
+            
         }
     }
 
@@ -74,8 +75,6 @@
       border-radius: 6px;
       border: 1px solid var(--networks);
       padding: 5px 0;
-
-      /* Position the tooltip */
       position: absolute;
       z-index: 1;
   }
